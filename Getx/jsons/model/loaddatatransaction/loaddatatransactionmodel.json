@@ -1,0 +1,26 @@
+{
+    "status": "200",
+    "message": "success",
+    "DataTransaction": [
+        {
+            "transId": 1,
+            "transRuningNumber": "DD-EXP:20200800001",
+            "transRefNo": "EXP:6500001",
+            "applicationId": "1",
+            "transCategorycode": "CarFee",
+            "transDataField": "$[]nodetransdatafield",
+            "transDataHtml": "",
+            "transAmount": 200.00,
+            "transImage": "[base64]",
+            "transDocumentFile": "xxxxxx[base64]",
+            "transDocumentLink": "link doc",
+            "transStartDate": "5/9/2022 16:27",
+            "transEndDate": "5/9/2022 16:27",
+            "transStatus": "Pedding",
+            "currentApproverEmail": "admin@test.com",
+            "approverEmail": "admin@test.com",
+            "approverName": "มานะ",
+            "acctionStatus": "$[]nodeacctionstatus"
+        }
+    ]
+}

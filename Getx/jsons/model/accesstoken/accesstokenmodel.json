@@ -1,0 +1,7 @@
+{
+    "status": "200",
+    "message": "success",
+    "accessToken": "tokenid",
+    "expireInSeconds": 14400,
+    "expireDate": "1661420514"
+}

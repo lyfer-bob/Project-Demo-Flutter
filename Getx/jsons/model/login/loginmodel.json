@@ -1,0 +1,21 @@
+{
+    "status": "200",
+    "message": "success",
+    "tenant": "$[]nodetenant",
+    "orgUnit": "$[]nodeorgunit",
+    "userMainId": 1,
+    "tenantMainId": 1,
+    "orgUnitMainId": 1,
+    "phoneNumber": "0898614600",
+    "userName": "admin",
+    "firstName": "admin",
+    "lastName": "tester",
+    "profilePicuture": "xxxxxxxxxxxxxxxx",
+    "emailAddress": "admin@test.com",
+    "accessToken": "token id",
+    "expireInSeconds": 14400,
+    "expireDate": "1661420514",
+    "refreshToken": "token id",
+    "refreshTokenExpireInSeconds": 14400,
+    "refreshTokenExpireDate": "1661420514"
+}

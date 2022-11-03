@@ -9,6 +9,8 @@ import 'package:project_test/utils/constant_value.dart';
 import 'package:project_test/widgets/buttonAccept.dart';
 import 'package:provider/provider.dart';
 
+import '../controller/register_otp_provider.dart';
+
 class RequestOTPRegister extends StatefulWidget {
   const RequestOTPRegister({Key? key}) : super(key: key);
 

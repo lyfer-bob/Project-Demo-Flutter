@@ -1,0 +1,9 @@
+{
+    "applicationId": 1,
+    "applicationName": "Expense Management",
+    "applicationPrefix": "EXP",
+    "applicationImage": 667875564644e644,
+    "applicationOrder": 1.99,
+    "applicationNotificationItem": true,
+    "permission": "Add|Edit|ViewAll|ViewOrg"
+}

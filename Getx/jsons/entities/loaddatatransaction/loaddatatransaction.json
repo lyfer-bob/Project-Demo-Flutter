@@ -1,0 +1,6 @@
+{
+    "userNameOrEmailAddress": "admin@test.com",
+    "applicationId": 1,
+    "filterText": "SE001",
+    "filter": "$[]nodefilter"
+}

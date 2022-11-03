@@ -1,0 +1,8 @@
+{
+    "transId": 1,
+    "transRefNo": "EXP:6500001",
+    "transStatus": "Cancel",
+    "transStatusReson": "เหตุผลการ reject,cancel",
+    "transStatusDate": "[ส่งค่า timestamp]",
+    "approverEmail": "System"
+}
