@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:project/service/route/route_page.dart';
-import '../../data/repositoryiml/login_repositoryIml.dart';
+import '../../data/repositoryimp/login_repositoryImp.dart';
 import '../../models/index.dart';
 import '../menu/menu_controller.dart';
 
 class LoginController extends GetxController {
-  LoginRepositoryIml? repo;
+  LoginRepositoryImp? repo;
   LoginController({this.repo});
 
   var loginModel = Loginmodel().obs;
   var isLoadingLogin = false.obs;
   var errorLoading = false.obs;
 
-  LoginRepositoryIml ctr = LoginRepositoryIml();
+  LoginRepositoryImp ctr = LoginRepositoryImp();
   MenuController ctr2 = MenuController();
   final email = TextEditingController().obs;
   final password = TextEditingController().obs;
@@ -33,7 +33,7 @@ class LoginController extends GetxController {
       loginbody.userNameOrEmailAddress = email.value.text;
       loginbody.password = password.value.text;
 
-      Get.toNamed(SDBRoutes.menuPage);
+      Get.toNamed(SDBRoutes.demo);
 
       try {
         loginModel.value = await ctr.requestLogin(loginbody);

@@ -2,17 +2,17 @@ import 'package:flutter/material.dart';
 import 'package:story/story_page_view/story_page_view.dart';
 
 class UserModel {
-  UserModel(this.stories, this.userName, this.imageUrl);
+  UserModel(this.stories, this.userName, this.image);
 
   final List<StoryModel> stories;
   final String userName;
-  final String imageUrl;
+  final String image;
 }
 
 class StoryModel {
-  StoryModel(this.imageUrl);
+  StoryModel(this.image);
 
-  final String imageUrl;
+  final String image;
 }
 
 class StoryPage extends StatefulWidget {
@@ -26,16 +26,10 @@ class _StoryPageState extends State<StoryPage> {
   late ValueNotifier<IndicatorAnimationCommand> indicatorAnimationController;
   final sampleUsers = [
     UserModel([
-      StoryModel(
-          "https://images.unsplash.com/photo-1601758228041-f3b2795255f1?ixid=MXwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxN3x8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"),
-      StoryModel(
-          "https://images.unsplash.com/photo-1609418426663-8b5c127691f9?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyNXx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"),
-      StoryModel(
-          "https://images.unsplash.com/photo-1609444074870-2860a9a613e3?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1Nnx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"),
-      StoryModel(
-          "https://images.unsplash.com/photo-1609504373567-acda19c93dc4?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1MHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"),
-    ], "Bob Thanapol",
-        "https://images.unsplash.com/photo-1609262772830-0decc49ec18c?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzMDF8fHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"),
+      StoryModel("assets/images/art1.jpeg"),
+      StoryModel("assets/images/art2.jpeg"),
+      StoryModel("assets/images/art3.jpeg"),
+    ], "Bob Thanapol", "assets/images/bobby.png"),
 
     // UserModel([
     //   StoryModel(
@@ -79,8 +73,8 @@ class _StoryPageState extends State<StoryPage> {
                 child: Container(color: Colors.black),
               ),
               Positioned.fill(
-                child: Image.network(
-                  story.imageUrl,
+                child: Image.asset(
+                  story.image,
                   fit: BoxFit.cover,
                 ),
               ),
@@ -93,7 +87,7 @@ class _StoryPageState extends State<StoryPage> {
                       width: 32,
                       decoration: BoxDecoration(
                         image: DecorationImage(
-                          image: NetworkImage(user.imageUrl),
+                          image: AssetImage(user.image),
                           fit: BoxFit.cover,
                         ),
                         shape: BoxShape.circle,
@@ -132,33 +126,33 @@ class _StoryPageState extends State<StoryPage> {
                 ),
               ),
             ),
-            if (pageIndex == 0)
-              Center(
-                child: ElevatedButton(
-                  child: const Text('show modal bottom sheet'),
-                  onPressed: () async {
-                    indicatorAnimationController.value =
-                        IndicatorAnimationCommand.pause;
-                    await showModalBottomSheet(
-                      context: context,
-                      builder: (context) => SizedBox(
-                        height: MediaQuery.of(context).size.height / 2,
-                        child: Padding(
-                          padding: const EdgeInsets.all(24),
-                          child: Text(
-                            'Look! The indicator is now paused\n\n'
-                            'It will be coutinued after closing the modal bottom sheet.',
-                            style: Theme.of(context).textTheme.headline5,
-                            textAlign: TextAlign.center,
-                          ),
-                        ),
-                      ),
-                    );
-                    indicatorAnimationController.value =
-                        IndicatorAnimationCommand.resume;
-                  },
-                ),
-              ),
+            // if (pageIndex == 0)
+            // Center(
+            //   child: ElevatedButton(
+            //     child: const Text('show modal bottom sheet'),
+            //     onPressed: () async {
+            //       indicatorAnimationController.value =
+            //           IndicatorAnimationCommand.pause;
+            //       await showModalBottomSheet(
+            //         context: context,
+            //         builder: (context) => SizedBox(
+            //           height: MediaQuery.of(context).size.height / 2,
+            //           child: Padding(
+            //             padding: const EdgeInsets.all(24),
+            //             child: Text(
+            //               'Look! The indicator is now paused\n\n'
+            //               'It will be coutinued after closing the modal bottom sheet.',
+            //               style: Theme.of(context).textTheme.headline5,
+            //               textAlign: TextAlign.center,
+            //             ),
+            //           ),
+            //         ),
+            //       );
+            //       indicatorAnimationController.value =
+            //           IndicatorAnimationCommand.resume;
+            //     },
+            //   ),
+            // ),
           ]);
         },
         indicatorAnimationController: indicatorAnimationController,

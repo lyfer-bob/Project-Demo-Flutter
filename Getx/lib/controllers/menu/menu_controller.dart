@@ -1,11 +1,11 @@
 import 'package:get/get.dart';
-import 'package:project/data/repositoryiml/menu_repositoryIml.dart';
+import 'package:project/data/repositoryimp/menu_repositoryImp.dart';
 
 class MenuController extends GetxController {
-  MenuRepositoryIml? repo;
+  MenuRepositoryImp? repo;
   MenuController({this.repo});
 
-  var ctr = MenuRepositoryIml();
+  var ctr = MenuRepositoryImp();
   // Rx<ListBannerTopNModel?> listBannerTopNModel = (null).obs;
 
   var jj = 'Test Data Controller'.obs;

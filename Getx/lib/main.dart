@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:project/controllers/login/login_binding.dart';
+import 'package:project/bindings/login_binding.dart';
 import 'package:project/utils/device_info.dart';
 import 'package:project/page/login/login.dart';
 import 'package:project/service/route/route_page.dart';

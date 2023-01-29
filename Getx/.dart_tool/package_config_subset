@@ -102,6 +102,10 @@ crypto
 2.14
 file:///Users/macbob/development/flutter/.pub-cache/hosted/pub.dartlang.org/crypto-3.0.2/
 file:///Users/macbob/development/flutter/.pub-cache/hosted/pub.dartlang.org/crypto-3.0.2/lib/
+curved_navigation_bar
+2.12
+file:///Users/macbob/development/flutter/.pub-cache/hosted/pub.dartlang.org/curved_navigation_bar-1.0.3/
+file:///Users/macbob/development/flutter/.pub-cache/hosted/pub.dartlang.org/curved_navigation_bar-1.0.3/lib/
 dart_style
 2.17
 file:///Users/macbob/development/flutter/.pub-cache/hosted/pub.dartlang.org/dart_style-2.2.4/
@@ -218,6 +222,10 @@ json_serializable
 2.17
 file:///Users/macbob/development/flutter/.pub-cache/hosted/pub.dartlang.org/json_serializable-6.5.4/
 file:///Users/macbob/development/flutter/.pub-cache/hosted/pub.dartlang.org/json_serializable-6.5.4/lib/
+json_to_model
+2.12
+file:///Users/macbob/development/flutter/.pub-cache/hosted/pub.dartlang.org/json_to_model-3.2.4/
+file:///Users/macbob/development/flutter/.pub-cache/hosted/pub.dartlang.org/json_to_model-3.2.4/lib/
 logging
 2.12
 file:///Users/macbob/development/flutter/.pub-cache/hosted/pub.dartlang.org/logging-1.1.0/
@@ -306,6 +314,10 @@ pubspec_parse
 2.14
 file:///Users/macbob/development/flutter/.pub-cache/hosted/pub.dartlang.org/pubspec_parse-1.2.1/
 file:///Users/macbob/development/flutter/.pub-cache/hosted/pub.dartlang.org/pubspec_parse-1.2.1/lib/
+quiver
+2.17
+file:///Users/macbob/development/flutter/.pub-cache/hosted/pub.dartlang.org/quiver-3.2.1/
+file:///Users/macbob/development/flutter/.pub-cache/hosted/pub.dartlang.org/quiver-3.2.1/lib/
 shelf
 2.17
 file:///Users/macbob/development/flutter/.pub-cache/hosted/pub.dartlang.org/shelf-1.4.0/

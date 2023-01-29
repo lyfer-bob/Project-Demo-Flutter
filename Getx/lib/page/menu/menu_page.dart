@@ -41,18 +41,40 @@ class MenuPage extends GetView<MenuController> {
                               fontSize: 16,
                             ),
                             TextApp(
-                              text: 'เกือบ..',
+                              text: 'เกือบ...',
                               fontSize: 16,
                             ),
                             _editProfile(context),
-                            InkWell(
-                              onTap: () => Get.toNamed(SDBRoutes.story),
-                              child: Container(
-                                width: 50,
-                                height: 50,
-                                color: Colors.red,
+                            Padding(
+                              padding: const EdgeInsets.only(top: 15),
+                              child: Row(
+                                children: [
+                                  Column(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      InkWell(
+                                        onTap: () =>
+                                            Get.toNamed(SDBRoutes.story),
+                                        child: ClipOval(
+                                          child: SizedBox(
+                                            width: 80,
+                                            height: 80,
+                                            child: Image.asset(
+                                              'assets/images/art1.jpeg',
+                                              fit: BoxFit.cover,
+                                            ),
+                                          ),
+                                        ),
+                                      ),
+                                      TextApp(
+                                        text: "ArtWorks",
+                                        fontSize: 13,
+                                      )
+                                    ],
+                                  ),
+                                ],
                               ),
-                            )
+                            ),
                           ],
                         ),
                       ),

@@ -26,8 +26,7 @@ class Loginmodel {
   late String refreshToken;
   late num refreshTokenExpireInSeconds;
   late String refreshTokenExpireDate;
-
-  factory Loginmodel.fromJson(Map<String, dynamic> json) =>
-      _$LoginmodelFromJson(json);
+  
+  factory Loginmodel.fromJson(Map<String,dynamic> json) => _$LoginmodelFromJson(json);
   Map<String, dynamic> toJson() => _$LoginmodelToJson(this);
 }

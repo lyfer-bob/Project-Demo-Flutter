@@ -12,10 +12,9 @@ Applicationlistmodel _$ApplicationlistmodelFromJson(
       ..status = json['status'] as String
       ..message = json['message'] as String
       ..applicationlist = (json['applicationlist'] as List<dynamic>)
-          .map((e) => Nodeapplicationlist.fromJson(e as Map<String, dynamic>))
+          .map((e) => Aestmodel.fromJson(e as Map<String, dynamic>))
           .toList()
-      ..nodeapplicationojb = Nodeapplicationojb.fromJson(
-          json['nodeapplicationojb'] as Map<String, dynamic>);
+      ..point = json['point'] as Map<String, dynamic>?;
 
 Map<String, dynamic> _$ApplicationlistmodelToJson(
         Applicationlistmodel instance) =>
@@ -23,5 +22,5 @@ Map<String, dynamic> _$ApplicationlistmodelToJson(
       'status': instance.status,
       'message': instance.message,
       'applicationlist': instance.applicationlist,
-      'nodeapplicationojb': instance.nodeapplicationojb,
+      'point': instance.point,
     };
