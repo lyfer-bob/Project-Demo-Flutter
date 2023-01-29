@@ -1,0 +1,12 @@
+
+1. เปิด folder project ใน ide
+2. เข้าไปที code ได้ที่ file lib > main.dart
+3.function เริ่มต้นเกิดจาก 
+
+ void initState() {
+    _getFileData('assets/input.txt').then((value) => _gpsHelper(value));
+
+    super.initState();
+  }
+
+4.ถ้าลง flutter ครบถ้วนแล้ว สามารถ run ผ่าน Device ที่เป็น android ได้ โดย flutter run

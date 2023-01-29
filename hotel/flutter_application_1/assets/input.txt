@@ -1,0 +1,21 @@
+create_hotel 2 3
+book 203 Thor 32
+book 101 PeterParker 16
+book 102 StephenStrange 36
+book 201 TonyStark 48
+book 202 TonyStark 48
+book 203 TonyStark 48
+list_available_rooms
+checkout 4 TonyStark
+book 103 TonyStark 48
+book 101 Thanos 65
+checkout 1 TonyStark
+checkout 5 TonyStark
+checkout 4 TonyStark
+list_guest
+get_guest_in_room 203
+list_guest_by_age < 18
+list_guest_by_floor 2
+checkout_guest_by_floor 1
+book_by_floor 1 TonyStark 48
+book_by_floor 2 TonyStark 48
