@@ -1,6 +1,6 @@
 
-1. เปิด folder project ใน ide
-2. เข้าไปที code ได้ที่ file lib > main.dart
+1. เปิด folder project_hotel ใน ide
+2. เข้าไปดู  code ได้ที่ file lib > main.dart
 3.function เริ่มต้นเกิดจาก 
 
  void initState() {
