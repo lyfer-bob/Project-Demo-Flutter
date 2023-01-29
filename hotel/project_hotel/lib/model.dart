@@ -1,19 +1,3 @@
-class HotelModel {
-  String action;
-  List<Room> room;
-  String addressId;
-  String id;
-  String latitude;
-  String longitude;
-  HotelModel(
-      {required this.action,
-      required this.room,
-      required this.addressId,
-      required this.id,
-      required this.latitude,
-      required this.longitude});
-}
-
 class Room {
   String? roomNumb;
   String? custName;
