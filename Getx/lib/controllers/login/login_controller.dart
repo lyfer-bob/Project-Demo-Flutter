@@ -1,20 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:project/controllers/menu/menu_controller.dart';
+import 'package:project/data/login_repositoryImp.dart';
 import 'package:project/service/route/route_page.dart';
-import '../../data/repositoryimp/login_repositoryImp.dart';
 import '../../models/index.dart';
-import '../menu/menu_controller.dart';
 
 class LoginController extends GetxController {
-  LoginRepositoryImp? repo;
-  LoginController({this.repo});
+  LoginRepository? repo;
+
 
   var loginModel = Loginmodel().obs;
   var isLoadingLogin = false.obs;
   var errorLoading = false.obs;
 
-  LoginRepositoryImp ctr = LoginRepositoryImp();
-  MenuController ctr2 = MenuController();
+  LoginRepository ctr = LoginRepository();
+  MenuCController ctr2 = MenuCController();
   final email = TextEditingController().obs;
   final password = TextEditingController().obs;
 

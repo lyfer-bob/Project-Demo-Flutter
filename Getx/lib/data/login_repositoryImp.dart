@@ -4,9 +4,12 @@ import 'package:project/service/api_provider.dart';
 import 'package:project/models/index.dart';
 import 'package:project/utils/get_storage.dart';
 import '../../utils/dialog_app.dart';
-import '../repository/login_repository.dart';
 
-class LoginRepositoryImp implements LoginRepository {
+class LoginRepository {
+  LoginRepository._internal();
+  static LoginRepository _instance = LoginRepository._internal();
+  factory LoginRepository() => _instance;
+
   @override
   Future<dynamic> requestLogin(Login login) async {
     login.deviceId = DataStorage.getDeviceName() ?? '';

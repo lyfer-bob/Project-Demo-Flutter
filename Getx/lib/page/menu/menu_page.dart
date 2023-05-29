@@ -8,7 +8,7 @@ import 'package:project/service/route/route_page.dart';
 import 'package:project/utils/exception/error_loading.dart';
 import 'package:project/utils/text/text_app.dart';
 
-class MenuPage extends GetView<MenuController> {
+class MenuPage extends GetView<MenuCController> {
   final ctrLogin = Get.find<LoginController>();
 
   @override
