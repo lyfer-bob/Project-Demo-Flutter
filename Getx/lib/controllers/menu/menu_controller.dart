@@ -1,5 +1,4 @@
-import 'package:get/get.dart';
-import 'package:project/data/menu_repositoryImp.dart';
+import 'package:project/controllers/pagekage.dart';
 
 class MenuCController extends GetxController {
   MenuRepository? repo;

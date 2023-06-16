@@ -1,9 +1,0 @@
-{
-    "status": "200",
-    "message": "success",
-    "applicationlist": "$[]aestmodel",
-    "point?": {
-        "longitude": 58.1234,
-        "latitude": 12.123
-    }
-}

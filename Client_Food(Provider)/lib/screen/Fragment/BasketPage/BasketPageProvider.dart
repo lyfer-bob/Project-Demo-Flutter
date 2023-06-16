@@ -1,5 +1,6 @@
 import 'dart:io';
 import 'dart:typed_data';
+import 'package:ProjectName/model/FromJSON/VoucherListModel.dart';
 import 'package:device_apps/device_apps.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_credit_card/credit_card_model.dart';
@@ -1673,8 +1674,7 @@ class BasketPageProvider extends ChangeNotifier {
   }
 
   Future showQrCodeWebView(String url) async {
-    promptpayQrcodeUrl =
-        '''<!DOCTYPE html>
+    promptpayQrcodeUrl = '''<!DOCTYPE html>
     <html>
     <body>
     <div class="container">

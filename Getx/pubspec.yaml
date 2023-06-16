@@ -42,16 +42,18 @@ dependencies:
   firebase_core: ^2.1.0 # core firebase
   cloud_firestore: ^4.0.2 # save log , get data from firebase
   font_awesome_flutter: ^10.2.1 # supper icon can search => https://fontawesome.com/search
-  animated_text_kit: ^4.2.2
-  story: ^0.8.0
-  curved_navigation_bar: ^1.0.3
-  quiver: ^3.2.1
+  animated_text_kit: ^4.2.2 # font animation
+  story: ^0.8.0 # for use story like instagram
+  quiver: ^3.2.1  #set of utility libraries for Dart that makes using many Dart libraries
+  responsive_sizer: ^3.1.1 # set responsive design
 
   
   
   
 
 dev_dependencies:
+  flutter_gen_runner: # generated assets in folder gen => https://pub.dev/packages/flutter_gen
+
   flutter_test:
     sdk: flutter
 
@@ -61,11 +63,8 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
 
-  json_model: ^1.0.0 # gen model from json
   build_runner: ^2.2.1 # run gen json model -> flutter packages pub run json_model
-  json_serializable: ^6.5.0 # json
-  
-  json_to_model: ^3.0.1
+
 
 
 

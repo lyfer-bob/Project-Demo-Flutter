@@ -2,18 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:project/bindings/login_binding.dart';
 import 'package:project/utils/device_info.dart';
-import 'package:project/page/login/login.dart';
-import 'package:project/service/route/route_page.dart';
+import 'package:project/screens/login/login.dart';
+import 'package:project/utils/route/route_page.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
-
-import 'service/dependency.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
   // add dependency
-  DependencyCreator.init();
 
 // use get storage
   await GetStorage.init('SdbStorage');

@@ -1,24 +1,19 @@
-import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'package:project/controllers/menu/menu_controller.dart';
-import 'package:project/data/login_repositoryImp.dart';
-import 'package:project/service/route/route_page.dart';
-import '../../models/index.dart';
+import 'package:project/controllers/pagekage.dart';
 
 class LoginController extends GetxController {
-  LoginRepository? repo;
+  final to = Get.find<LoginController>();
 
+  LoginRepository repoLogin = LoginRepository();
+  MenuCController repoMenu = MenuCController();
 
-  var loginModel = Loginmodel().obs;
-  var isLoadingLogin = false.obs;
-  var errorLoading = false.obs;
-
-  LoginRepository ctr = LoginRepository();
-  MenuCController ctr2 = MenuCController();
   final email = TextEditingController().obs;
   final password = TextEditingController().obs;
 
-  var loginbody = Login();
+  var loginModel = LoginModel().obs;
+  var isLoadingLogin = false.obs;
+  var errorLoading = false.obs;
+
+  var loginReq = Login();
   var obscureText = true.obs;
   var stsLogin = false.obs;
 
@@ -29,14 +24,17 @@ class LoginController extends GetxController {
   }
 
   Future<void> loginAction(BuildContext context) async {
-    if (ctr.validateData(email.value.text, password.value.text, context)) {
-      loginbody.userNameOrEmailAddress = email.value.text;
-      loginbody.password = password.value.text;
+    if (repoLogin.validateData(
+        email.value.text, password.value.text, context)) {
+      loginReq.userNameOrEmailAddress = email.value.text;
+      loginReq.password = password.value.text;
 
       Get.toNamed(SDBRoutes.demo);
 
       try {
-        loginModel.value = await ctr.requestLogin(loginbody);
+        print('login action');
+        // Todo : call api
+        //   loginModel.value = await repoLogin.requestLogin(loginReq);
       } catch (e) {
         print('error data');
         // errorLoading = true.obs;
@@ -51,6 +49,7 @@ class LoginController extends GetxController {
   }
 
   void changeStsLogin() {
-    stsLogin.value = ctr.getStsLogin(email.value.text, password.value.text);
+    stsLogin.value =
+        repoLogin.getStsLogin(email.value.text, password.value.text);
   }
 }
