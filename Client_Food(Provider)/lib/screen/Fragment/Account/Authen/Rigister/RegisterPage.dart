@@ -372,7 +372,7 @@ class _RegisterPageState extends State<RegisterPage> {
               borderSide: BorderSide(color: Color(0xFFFEBC18)),
             ),
 
-            //hintText: text,
+            hintText: text,
             hintStyle:
                 Constants().textStyleRegular(colorValue: Color(0xFFC0C0C0)),
             contentPadding: EdgeInsets.fromLTRB(10.0, 15.0, 20.0, 15.0),

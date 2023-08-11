@@ -326,6 +326,10 @@ shelf_web_socket
 2.17
 file:///C:/Users/thanapol_th/AppData/Local/Pub/Cache/hosted/pub.dev/shelf_web_socket-1.0.4/
 file:///C:/Users/thanapol_th/AppData/Local/Pub/Cache/hosted/pub.dev/shelf_web_socket-1.0.4/lib/
+sms_otp_auto_verify
+2.12
+file:///C:/Users/thanapol_th/AppData/Local/Pub/Cache/hosted/pub.dev/sms_otp_auto_verify-2.1.0/
+file:///C:/Users/thanapol_th/AppData/Local/Pub/Cache/hosted/pub.dev/sms_otp_auto_verify-2.1.0/lib/
 source_span
 2.14
 file:///C:/Users/thanapol_th/AppData/Local/Pub/Cache/hosted/pub.dev/source_span-1.9.1/
@@ -399,7 +403,7 @@ yaml
 file:///C:/Users/thanapol_th/AppData/Local/Pub/Cache/hosted/pub.dev/yaml-3.1.2/
 file:///C:/Users/thanapol_th/AppData/Local/Pub/Cache/hosted/pub.dev/yaml-3.1.2/lib/
 project
-2.17
+3.0
 file:///C:/Work/My/Getx/
 file:///C:/Work/My/Getx/lib/
 sky_engine

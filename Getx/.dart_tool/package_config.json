@@ -518,6 +518,12 @@
       "languageVersion": "3.0"
     },
     {
+      "name": "sms_otp_auto_verify",
+      "rootUri": "file:///C:/Users/thanapol_th/AppData/Local/Pub/Cache/hosted/pub.dev/sms_otp_auto_verify-2.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "source_span",
       "rootUri": "file:///C:/Users/thanapol_th/AppData/Local/Pub/Cache/hosted/pub.dev/source_span-1.9.1",
       "packageUri": "lib/",
@@ -629,10 +635,10 @@
       "name": "project",
       "rootUri": "../",
       "packageUri": "lib/",
-      "languageVersion": "2.17"
+      "languageVersion": "3.0"
     }
   ],
-  "generated": "2023-06-16T04:10:41.102525Z",
+  "generated": "2023-08-09T14:28:48.095515Z",
   "generator": "pub",
-  "generatorVersion": "3.0.5"
+  "generatorVersion": "3.0.6"
 }

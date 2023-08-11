@@ -1,32 +1,8 @@
 import 'dart:convert';
 import 'dart:math';
-import 'package:crypto/crypto.dart';
-import 'package:firebase_auth/firebase_auth.dart';
-import 'package:/model/FromJSON/CustomerLoginModel.dart';
-import 'package:/model/FromJSON/ProfileUserCredentialModel.dart';
-import 'package:/model/FromJSON/SuccessModel.dart';
-import 'package:/model/FromJSON/requestOTPRegistModel.dart';
-import 'package:/model/FromJSON/requestOTPforgotModel.dart';
-import 'package:/model/FromJSON/requestOTPmedel.dart';
-import 'package:/model/FromJSON/requestOTPLoginModel.dart';
-import 'package:/model/FromJSON/verfityOTPforgotModel.dart';
-import 'package:/model/FromJSON/verifyOTPLoginModel.dart';
-import 'package:/model/FromJSON/verifyOTPRegistRodel.dart';
-import 'package:/model/ToJSON/CustomerSignUpModel.dart';
-import 'package:/screen/Fragment/FragmentProvider.dart';
-import 'package:/screen/Fragment/RestaurantMain/RestaurantMainProvider.dart';
-import 'package:/screen/Profile/Address/AddressSavePageProvider.dart';
-import 'package:/services/auth_service.dart';
-import 'package:/services/request/RestAPI.dart';
-import 'package:/services/route/ApiPath.dart';
-import 'package:/utils/DialogsStatus.dart';
-import 'package:/utils/DialogsSuccess.dart';
-import 'package:google_sign_in/google_sign_in.dart';
-import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
-import 'package:shared_preferences/shared_preferences.dart';
-import 'package:sign_in_with_apple/sign_in_with_apple.dart';
-import 'package:/screen/Fragment/Account/Authen/provider/RigisterProvider.dart';
+import 'package:ProjectName/services/auth_service.dart';
+
+import '../model/FromJSON/MenuDetailsModel.dart';
 
 class AuthBloc {
   final authService = AuthService();
